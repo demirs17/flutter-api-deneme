@@ -1,0 +1,14 @@
+# bütün hepsi index.php ye
+# RewriteEngine On
+# RewriteRule ^(.*)$ index.php [L]
+
+# dosya yoksa index.php ye
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.*)$ index.php [L]
+
+
+# css js haric bütün hepsi index.php ye
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !\.(js|css)$
+RewriteRule ^(.*)$ index.php [L]
