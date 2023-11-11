@@ -1,4 +1,4 @@
-GET  /api 
+GET  /api
 tüm postları getirir
 
 
